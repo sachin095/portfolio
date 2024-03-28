@@ -1,0 +1,125 @@
+/* .cta {
+  height: 89.5vh;
+} */
+
+/* SPECIFIC CODE FOR INDEX PAGE */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* 44 / 52 / 62  */
+  gap: 2.4rem;
+}
+
+.heading {
+  font-size: 9.8rem;
+  font-weight: 500;
+}
+
+.intro {
+  display: flex;
+  /* align-self: center; */
+  margin-left: 2rem;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.code-block {
+  font-size: 2rem;
+  color: #00adb5;
+}
+
+.name {
+  font-size: 3rem;
+  padding: 0.2rem;
+  font-weight: 500;
+}
+.title {
+  font-size: 2.4rem;
+  padding: 0.2rem;
+}
+
+/* .btn-cta {
+  margin-top: 2rem;
+  color: #eeeeee;
+  background: linear-gradient(to right, #24c6dc, #514a9d);
+  border: none;
+  border-radius: 100rem;
+  font-size: 2rem;
+  padding: 2rem 6rem;
+  cursor: pointer;
+  transition: background-image box-shadow 0.3s;
+}
+
+.btn-cta:hover {
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right, #f12711, #f5af19);
+} */
+
+/* USED CSS GENERATOR */
+
+.btn-cta {
+  background: #24c6dc;
+  background-image: -webkit-linear-gradient(top, #24c6dc, #514a9d);
+  background-image: -moz-linear-gradient(top, #24c6dc, #514a9d);
+  background-image: -ms-linear-gradient(top, #24c6dc, #514a9d);
+  background-image: -o-linear-gradient(top, #24c6dc, #514a9d);
+  background-image: linear-gradient(to bottom, #24c6dc, #514a9d);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  background: #f12711;
+  background-image: -webkit-linear-gradient(top, #f12711, #f5af19);
+  background-image: -moz-linear-gradient(top, #f12711, #f5af19);
+  background-image: -ms-linear-gradient(top, #f12711, #f5af19);
+  background-image: -o-linear-gradient(top, #f12711, #f5af19);
+  background-image: linear-gradient(to bottom, #f12711, #f5af19);
+  text-decoration: none;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 160%;
+  /* border: 1px dotted rgb(36, 198, 220); */
+  box-shadow: 0 3.2rem 6.4rem rgba(36, 198, 220, 0.3);
+}
+
+/* Responsive CSS */
+@media (max-width: 400px) {
+  .hero {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .hero-container {
+    display: none;
+  }
+  header {
+    gap: 10rem;
+  }
+
+  .heading {
+    font-size: 7.8rem;
+    font-weight: 500;
+  }
+}

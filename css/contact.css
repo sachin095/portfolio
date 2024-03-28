@@ -1,0 +1,139 @@
+.container-contacts {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  padding: 6.4rem;
+}
+
+.contact-form,
+.contact-img {
+  padding: 0 4.2rem;
+}
+
+.contact-img {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form form {
+  box-shadow: 0 3.2rem 6.4rem #1d1f2311;
+}
+
+.contact-heading {
+  font-family: "Tourney", cursive;
+  font-weight: 400;
+  font-size: 6rem;
+  border-bottom: 0.5rem solid #00adb5;
+  margin: 4.2rem auto 7.6rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.name-input,
+.message-box,
+.email-input {
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  /* border: 2px solid #a5d8ff; */
+  outline: none;
+  box-shadow: 0 0 5px 2px #00adb5;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name-input {
+  flex: 1 1 auto;
+}
+
+.email-input {
+  width: 100%;
+  display: block;
+}
+.message-box {
+  width: 100%;
+  resize: none;
+}
+
+input[type="submit"] {
+  background: #24c6dc;
+  background-image: -webkit-linear-gradient(top, #24c6dc, #514a9d);
+  background-image: -moz-linear-gradient(top, #24c6dc, #514a9d);
+  background-image: -ms-linear-gradient(top, #24c6dc, #514a9d);
+  background-image: -o-linear-gradient(top, #24c6dc, #514a9d);
+  background-image: linear-gradient(to bottom, #24c6dc, #514a9d);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border: none;
+  border-radius: 28px;
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #f12711;
+  background-image: -webkit-linear-gradient(top, #f12711, #f5af19);
+  background-image: -moz-linear-gradient(top, #f12711, #f5af19);
+  background-image: -ms-linear-gradient(top, #f12711, #f5af19);
+  background-image: -o-linear-gradient(top, #f12711, #f5af19);
+  background-image: linear-gradient(to bottom, #f12711, #f5af19);
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  body {
+    overflow: hidden;
+  }
+  .container-contacts {
+    grid-template-columns: 1fr;
+    padding: 0 2.6rem;
+  }
+  .contact-img {
+    display: none;
+  }
+  .contact-form {
+    width: 100%;
+    padding: 0;
+  }
+  .contact-heading {
+    font-size: 4rem;
+    border-bottom: 0.5rem solid #00adb5;
+    margin: 1rem 0 5rem;
+    width: 100%;
+  }
+
+  form {
+    gap: 2rem;
+    width: 100%;
+  }
+
+  form div {
+    gap: 2rem;
+  }
+
+  .name-input,
+  .message-box,
+  .email-input {
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,124 @@
+.container-skills {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 6.4rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+  gap: 9rem;
+}
+
+.container-img {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  font-size: 6rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.languages,
+.tools {
+  margin: 3rem 1rem;
+  display: flex;
+  gap: 2rem;
+  /* flex-wrap: wrap; */
+}
+
+.skills {
+  font-family: "Tourney", cursive;
+}
+
+.language {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  padding: 2rem;
+  transition: all 0.5s;
+}
+
+.language:hover {
+  transform: scale(0.9);
+  border: transparent;
+  cursor: pointer;
+}
+
+.html {
+  border: 1px solid salmon;
+  box-shadow: inset 0 0 10rem 0rem rgba(250, 128, 114, 0.247);
+}
+.css {
+  border: 1px solid #72b1fa;
+  box-shadow: inset 0 0 10rem 0rem #72b1fa34;
+}
+.js {
+  border: 1px solid #fae672;
+  box-shadow: inset 0 0 10rem 0rem #fae67234;
+}
+.linux {
+  border: 1px solid #fae672;
+  box-shadow: inset 0 0 10rem 0rem #fae67234;
+}
+.node {
+  border: 1px solid #9dfa72;
+  box-shadow: inset 0 0 10rem 0rem #9dfa7234;
+}
+
+.vscode {
+  border: 1px solid #72b1fa;
+  box-shadow: inset 0 0 10rem 0rem #72b1fa34;
+}
+.git {
+  border: 1px solid salmon;
+  box-shadow: inset 0 0 10rem 0rem rgba(250, 128, 114, 0.247);
+}
+
+.chrome {
+  border-top: 1px solid salmon;
+  border-left: 1px solid #9dfa72;
+  border-bottom: 1px solid #fae672;
+  border-right: 1px solid #fae672;
+  box-shadow: inset 0 0 10rem 0rem #fae67234;
+}
+
+.image {
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .container-skills {
+    grid-template-columns: 1fr;
+    padding: 2.1rem;
+  }
+
+  .container-img {
+    display: none;
+  }
+
+  .heading {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #eee;
+  }
+
+  .language {
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    padding: 1rem;
+    transition: all 0.5s;
+  }
+
+  .languages,
+  .tools {
+    flex-wrap: wrap;
+    margin: 1rem 0.3rem;
+    gap: 0.6rem;
+  }
+}
